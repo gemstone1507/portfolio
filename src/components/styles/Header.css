@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+.Typist__Header--greeting{
+    text-align: center;
+    font-size: 72px;
+    font-family: 'Poiret One', cursive;
+    margin-top: 30px;
+    color: #000000;
+}
+.Typist__Header--greeting span{
+    text-align: center;
+    font-size: 72px;
+    padding: 10px;
+    font-family: 'Poiret One', cursive;
+    margin-top: 30px;
+    color: #fff;
+    background: #000000;
+}
