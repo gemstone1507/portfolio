@@ -24,8 +24,8 @@ export default class Header extends React.Component{
                         startDelay={1000}
                         onTypingDone={this.onHeaderDone}
                     >
-                        Hello My New Friend
-                        <Typist.Backspace count={13} delay={500} />
+                        Hi, my new visitor
+                        <Typist.Backspace count={14} delay={500} />
                         <Typist.Delay ms={500} />
                         <span>{this.state.userName}</span>
                         

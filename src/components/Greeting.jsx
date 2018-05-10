@@ -1,7 +1,9 @@
 import React from 'react';
 import Typist from 'react-typist';
-import MainPage from './MainPage.jsx';
+import $ from "jquery";
 import { reactLocalStorage } from 'reactjs-localstorage';
+
+import MainPage from './MainPage.jsx';
 
 import './styles/Greeting.css';
 
@@ -19,19 +21,24 @@ export default class Greeting extends React.Component {
     }
 
     handleChange(event) {
+
         this.setState({
             value: event.target.value
         });
     }
     handleSubmit() {
         if (this.state.value.length > 0) {
-            reactLocalStorage.setObject('1', this.state.value);
-            this.setState({
-                greeting: false
-            })
+            $('.greeting__section').fadeOut(600);
+            setTimeout(() => {
+                reactLocalStorage.setObject('1', this.state.value);
+                this.setState({
+                    greeting: false
+                })
+            }, 700);
+
         }
         else {
-            alert("Будь добр и представся, ведь я хочу знакомиться)")
+            alert("Будь добр и представся, ведь я хочу знакомится)")
         }
     }
 
@@ -57,30 +64,31 @@ export default class Greeting extends React.Component {
                         cursor={{ hideWhenDone: true }}
                         onTypingDone={this.onHeaderDone}
                     >
-                        Привет, мой новый посетитель
+                        Hi, my new visitor
                     </Typist>
                     <div className='Typist__main'>
                         {this.state.renderMsg ? (
                             <Typist
                                 onTypingDone={this.onNewMessDone}
+                                cursor={{ hideWhenDone: true }}
                             >
-                                Я хочу познакомиться с тобой
+                               I`m glad to see you here
                             <Typist.Delay ms={550} />
                                 <br />
-                                Рассказать о себе, но для начала
+                                But I don`t know nothing about you
                             <Typist.Delay ms={550} />
                                 <br />
-                                Я хочу знать как тебя зовут
-                            <Typist.Delay ms={550} />
+                                Tell me please, what is your name?
+                            <Typist.Delay ms={550}  />
                                 <br />
-                                <p className="note">*Просто введи свое имья и продолжим</p>
+                                <span className="note">*Just write down your name and submit, to continue our acquaintance</span>
                                 <Typist.Delay ms={550} />
                             </Typist>
                         ) : null}
                         {this.state.userName ? (
                             <div className="Tm__user--info">
                                 <input type="text" className='Tm__user--input' onChange={this.handleChange} />
-                                <input className='Tm__send--btn' type="button" value="SEND" onClick={this.handleSubmit} />
+                                <input className='Tm__send--btn' type="submit" value="Submit" onClick={this.handleSubmit} />
                             </div>
                         ) : null}
 

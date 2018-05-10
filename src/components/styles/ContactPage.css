@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+
+.ContactPage{
+    width: 100%;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    float: left;
+    margin: 10px auto;
+    padding: 75px 12px;
+    text-align: center;
+}
+.ContactPage p{
+    font-family: 'Poiret One', cursive;;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 1.8;
+}
+.ContactPage p a{
+    font-family: 'Poiret One', cursive;;
+    font-weight: bold;
+    background: #000;
+    color: #fff;
+    padding: 2px;
+    margin: 3px;
+    text-decoration: none;
+    font-size: 22px;
+    transition: all 0.5s ease-out;
+}
+.ContactPage p a:hover{
+    background: #000;
+    color: rgb(156, 153, 153);
+}
+
+@media screen  and (max-width: 1024px) {
+    
+    .ContactPage{
+        width: 100%;
+        padding: 15% 0px;
+    }
+    .ContactPage p{
+        line-height: 1.6;
+    }
+    
+  }

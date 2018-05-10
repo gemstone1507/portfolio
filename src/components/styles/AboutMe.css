@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+
+
+.painted__text{
+    text-align: center;
+    padding: 2px;
+    color: #fff;
+    background: #000000;
+}
+.AboutMe__info--block{
+    width: 90%;
+    padding: 10px 25px;
+
+}
+.AboutMe__ib--text{
+    font-family: 'Poiret One', cursive;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+
+@media screen  and (max-width: 1024px) {
+    .AboutMe__info--block{
+        width: 90%;
+        padding: 10px 15px;
+        text-align: left;
+    }
+    .AboutMe__ib--text{
+        font-size: 20px;
+        line-height: 1.4;
+    }
+  }

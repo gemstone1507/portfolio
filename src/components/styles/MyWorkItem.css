@@ -1,0 +1,42 @@
+.MyWorkItem{
+    width: 315px;
+    margin: 25px 10px;;
+    float: left;
+    height: 200px;
+    border: 2px solid #222;
+    position: relative;
+}
+.MyWorkItem img{
+    width: 100%;
+    height: 100%;
+    filter: grayscale(100%);
+    transition: all 0.7s ease-out;
+    cursor: pointer;
+}
+.MyWorkItem img:hover{
+    filter: grayscale(20%);
+}
+/* .MyWorkItem .about__item{
+    position: absolute;
+    right: 5px;
+    top: 145px;
+    width: 150px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.212);
+    border: 1px solid #222;
+}
+.MyWorkItem .about__item .work__name{
+    text-align: center;
+    font-weight: 700;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+} */
+
+@media screen  and (max-width: 1024px) {
+    .MyWorkItem{
+        width: 90%;
+        margin: 25px 5%;
+        height: 100%;
+    }
+
+  }

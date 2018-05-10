@@ -48,3 +48,19 @@
     background: #222;
     color: #fff;
 }
+
+@media screen  and (max-width: 1024px) {
+    .Typist__main{
+        width: 80%;
+        margin: 10% auto;
+    }
+    .greeting__section .Typist__header{
+        font-size: 52px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-top: 5%;  
+    }
+    .Tm__user--info{
+        margin: 10% auto;
+    }
+  }

@@ -9,9 +9,7 @@ import './App.css';
 let name = reactLocalStorage.getObject('1');
 class App extends Component {
 
-
-
-  
+ 
 
   render() {
     if(name.length === undefined){
@@ -29,7 +27,6 @@ class App extends Component {
       )
     }
     
-
   }
 }
 

@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poiret+One');
 .Typist__Header--greeting{
+    margin-bottom: 100px;
     text-align: center;
     font-size: 72px;
     font-family: 'Poiret One', cursive;
@@ -15,3 +16,14 @@
     color: #fff;
     background: #000000;
 }
+
+@media screen  and (max-width: 1024px) {
+    .Typist__Header--greeting{
+        margin-bottom: 15%;
+        padding: 0px 15px;
+        line-height: 1.6;
+        font-size: 52px;
+        margin-top: 5%;
+    }
+    
+  }
